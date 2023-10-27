@@ -45,7 +45,7 @@ except URLError as e:
   streamlit.error()
 
 #this will not work correctly, but just go with it for now
-my_cur.exucite("insert into fruit_load_list values ('from streamlit')")
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 streamlit.header("The fruit load list contains:")
 #Snowflake-related functions
